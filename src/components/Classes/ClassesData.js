@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ClassesData.scss';
 const ClassesData = (props) => {
 
-    const gymInfo = props.info;
+    const {name,img} = props.info;
 
     return (
        
 
         <div className="col-md-4 mt-5 mb-5">
            
-                <img className="classesImage" src={gymInfo.img} style={{ width: "300px", height: "285px" }} />
+                <img className="classesImage" src={img} style={{ width: "300px", height: "285px" }} />
 
-                <button className='buttonClasses'>{gymInfo.name} <span style={{marginLeft:'5%'}}>🡺</span></button>
+                <Link to={'/class/'+name}>
+
+                <button className='buttonClasses'>{name} <span style={{marginLeft:'5%'}}>🡺</span></button>
+                
+                </Link>
 
             
         </div>

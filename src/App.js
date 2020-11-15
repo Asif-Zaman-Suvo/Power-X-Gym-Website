@@ -44,10 +44,10 @@ function App() {
           <Classes></Classes>
         </Route>
 
-        <Route exact path="/ourClasses/:className">
+        <Route exact path="/class/:className">
           <ClassDescription></ClassDescription>
         </Route>
-        
+
         <Route exact path="*">
           <Notfound></Notfound>
         </Route>
