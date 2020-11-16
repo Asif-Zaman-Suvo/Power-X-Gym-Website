@@ -58,27 +58,32 @@ const ClassDescription = () => {
 
 
 
-            <div className='container classDetails'>
-                <div className='row mt-5'>
-                    <div className='col-md-6 mt-4'>
-                        <img className='classDescription' style={{ width: '100%', height: '50%' }} src={classDescription.img}></img>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <img style={{ width: '55%', height: '50%' }} src={classDescription.img}></img>
 
-                        <p className='mt-5 mb-5'>
+                        <p className='mt-3'>
                             {classDescription.description}
                         </p>
+                        <div className='row'>
+                            <div className='col-md-9'>
+                                <p><img className='checkMark' src={checkmark}></img><b>Having slimmer shapely thigh</b></p>
 
-                        <div className='ml-3'>
-                            <div className='row'>
-                            <p><img className='checkMark' src={checkmark}></img><b>Having slimmer shapely thigh</b></p>
-                            </div>
-                            <div className='row'>
+
                                 <p><img className='checkMark' src={checkmark}></img><b>Getting Stronger Body</b></p>
+
+                                <p><img className='checkMark' src={checkmark}></img><b>Increased Metabolism</b></p>
+                                <p><img className='checkMark' src={checkmark}></img><b>Increase Muscular Indurance</b></p>
+                                <p><img className='checkMark' src={checkmark}></img><b>Maximum Results in less time</b></p>
+                                <p><img className='checkMark' src={checkmark}></img><b>Firm hips and tummy</b></p>
                             </div>
-                            <div className='row'><p><img className='checkMark' src={checkmark}></img><b>Increased Metabolism</b></p></div>
-                            <div className='row'><p><img className='checkMark' src={checkmark}></img><b>Increase Muscular Indurance</b></p></div>
-                            <div className='row'><p><img className='checkMark' src={checkmark}></img><b>Maximum Results in less time</b></p></div>
-                            <div className='row'><p><img className='checkMark' src={checkmark}></img><b>Firm hips and tummy</b></p></div>
+                            <div className='col-md-3'></div>
+
+
                         </div>
+
+
 
                     </div>
 
@@ -90,16 +95,20 @@ const ClassDescription = () => {
                         </div>
 
                         <div className="joinButton">
-                                <Link to="/pricing">
+                            <Link to="/pricing">
                                 <button className="btn btn-warning btn-lg">JOIN US</button>
-                                </Link>
-                            </div>
+                            </Link>
+                        </div>
 
                     </div>
                 </div>
+
+
             </div>
 
-            <Footer></Footer>
+            <div className="description-footer">
+                <Footer></Footer>
+            </div>
 
 
 
