@@ -76,7 +76,7 @@ const ClassDescription = () => {
                                 <p><img className='checkMark' src={checkmark}></img><b>Increased Metabolism</b></p>
                                 <p><img className='checkMark' src={checkmark}></img><b>Increase Muscular Indurance</b></p>
                                 <p><img className='checkMark' src={checkmark}></img><b>Maximum Results in less time</b></p>
-                                <p><img className='checkMark' src={checkmark}></img><b>Firm hips and tummy</b></p>
+                                <p style={{marginBottom:'10em'}}><img className='checkMark' src={checkmark}></img><b>Firm hips and tummy</b></p>
                             </div>
                             <div className='col-md-3'></div>
 
